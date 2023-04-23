@@ -95,7 +95,6 @@ $(document).ready(function () {
     $(".list-tour").slick({
         slidesToShow: 1,
         dots: true,
-        infinite: false,
         centerMode: true,
         variableWidth: true,
         prevArrow:
@@ -111,8 +110,6 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 1,
                     dots: true,
-                    infinite: false,
-                    centerMode: true,
                     variableWidth: true,
                     infinite: true,
                     prevArrow:

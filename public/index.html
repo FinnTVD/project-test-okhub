@@ -1,1098 +1,711 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="shortcut icon"
-            href="./images/logo.png"
-            type="image/x-icon"
-        />
-        <title>Connek</title>
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-        />
-        <link rel="stylesheet" href="./tailwind.css" />
-        <link rel="stylesheet" href="./app.css" />
-    </head>
-    <body>
-        <div class="relative w-full overflow-hidden App">
-            <!-- background -->
-            <div
-                class="absolute w-[375px] h-[375px] md:w-[909px] md:h-[909px] -left-[91px] top-[154px] md:-left-[369px] md:top-[995px] bg-linearOrangeBlur2 md:bg-linearOrangeBlur15 blur-config"
-            ></div>
-            <div
-                class="absolute w-[374px] h-[374px] md:w-[491px] md:h-[491px] md:left-[1185px] md:top-[1171px] left-[106px] top-[296px] blur-config bg-linearBlueBlur25"
-            ></div>
-            <div
-                class="absolute w-[268px] h-[268px] -left-[74px] top-[680px] md:w-[775px] md:h-[775px] md:-left-[355px] md:top-[1493px] blur-config bg-linearBlueBlur3 md:bg-linearBlueBlur15"
-            ></div>
-            <div
-                class="absolute w-[375px] md:w-[1166px] md:h-[1166px] md:left-[935px] md:top-[1549px] h-[375px] left-[49px] top-[665px] bg-linearOrangeBlur2 md:bg-linearOrangeBlur15 blur-config"
-            ></div>
-            <div
-                class="absolute w-[375px] h-[375px] left-[49px] top-[1155px] md:w-[1166px] md:h-[1166px] md:-left-[430px] md:top-[1975px] bg-linearOrangeBlur2 md:bg-linearOrangeBlur1 blur-config"
-            ></div>
-            <div
-                class="absolute w-[268px] h-[268px] -left-[64px] top-[1470px] bg-linearBlueBlur3 md:w-[1061px] md:h-[1061px] md:left-[803px] md:top-[2737px] md:bg-linearBlueBlur15 blur-config"
-            ></div>
-            <div
-                class="absolute w-[331px] h-[331px] -left-[11px] top-[1707px] bg-linearOrangeBlur2 md:w-[1166px] md:h-[1166px] md:-left-[350px] md:top-[2896px] md:bg-linearBlueBlur15 blur-config"
-            ></div>
-            <div
-                class="absolute w-[268px] h-[268px] -left-[64px] top-[2080px] bg-linearBlueBlur3 md:w-[770px] md:h-[770px] md:left-[628px] md:top-[3458px] md:bg-linearOrangeBlur15 blur-config"
-            ></div>
-            <div
-                class="absolute w-[304px] h-[304px] -left-[110x] top-[2442px] bg-linearBlueBlur3 md:w-[662px] md:h-[662px] md:left-[1100px] md:top-[4548px] md:bg-linearOrangeBlur15 blur-config"
-            ></div>
-            <div
-                class="absolute w-[331px] h-[331px] left-[79px] top-[2607px] bg-linearOrangeBlur2 md:w-[1166px] md:h-[1166px] md:-left-[368px] md:top-[4693px] md:bg-linearOrangeBlur15 blur-config"
-            ></div>
-            <div
-                class="absolute w-[331px] h-[331px] -left-[121px] top-[3697px] bg-linearOrangeBlur2 md:w-[1061px] md:h-[1061px] md:left-[268px] md:top-[4946px] md:bg-linearRedBlur1 blur-config"
-            ></div>
-            <div
-                class="absolute w-[331px] h-[331px] left-[159px] top-[4127px] bg-linearOrangeBlur2 md:w-[1005px] md:h-[1005px] md:left-[781px] md:top-[5072px] md:bg-linearBlueBlur1 blur-config"
-            ></div>
-            <div
-                class="absolute max-md:hidden w-[919px] h-[919px] -left-[242px] top-[5483px] bg-linearBlueBlur25 blur-config"
-            ></div>
-            <div
-                class="absolute max-md:hidden -left-[10px] top-[1664px] rotate-180"
-            >
-                <img
-                    class="h-[563px]"
-                    src="./images/logo-background.png"
-                    alt=""
-                />
-            </div>
-            <div class="absolute max-md:hidden -right-2 top-[5436px]">
-                <img src="./images/logo-background.png" alt="" />
-            </div>
 
-            <!-- banner slide -->
-            <header class="relative">
-                <div class="head-banner-slide">
-                    <div class="w-full h-[850px] max-md:h-[301px]">
-                        <img
-                            class="object-cover w-full h-full"
-                            src="./images/bg-head.png"
-                            alt=""
-                        />
-                    </div>
-                    <div class="w-full h-[850px] max-md:h-[301px]">
-                        <img
-                            class="object-cover w-full h-full"
-                            src="./images/bg.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="w-full h-[850px] max-md:h-[301px]">
-                        <img
-                            class="object-cover w-full h-full"
-                            src="./images/bg1.jpg"
-                            alt=""
-                        />
-                    </div>
-                </div>
-                <section
-                    class="h-[850px] max-md:h-[301px] w-full absolute top-4 max-md:top-2 px-[180px] max-md:px-[15px]"
-                >
-                    <div class="w-full">
-                        <nav class="flex justify-between w-full header-nav">
-                            <div
-                                class="cursor-pointer max-md:flex max-md:items-center"
-                            >
-                                <a href="#">
-                                    <img
-                                        class="max-md:w-12 max-md:h-9"
-                                        src="./images/logo.png"
-                                        alt=""
-                                    />
-                                </a>
-                            </div>
-                            <ul
-                                class="flex items-center list-none gap-x-8 max-md:hidden"
-                            >
-                                <li class="cursor-pointer select-none">Home</li>
-                                <li class="cursor-pointer select-none">
-                                    <a href="#destination">Destinations</a>
-                                </li>
-                                <li class="cursor-pointer select-none">
-                                    Travel styles
-                                </li>
-                                <li class="cursor-pointer select-none">
-                                    About us
-                                </li>
-                                <li class="cursor-pointer select-none">Blog</li>
-                                <li class="cursor-pointer select-none">
-                                    Contact
-                                </li>
-                            </ul>
-                            <div
-                                class="flex flex-col justify-evenly max-md:justify-center"
-                            >
-                                <div class="flex gap-x-[6px] cursor-pointer">
-                                    <img
-                                        class="w-5 h-5 max-md:w-[15px] max-md:h-4"
-                                        src="./images/phone.svg"
-                                        alt=""
-                                    />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <title>Connek</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./tailwind.css" />
+    <link rel="stylesheet" href="./app.css" />
+</head>
 
-                                    <span
-                                        class="font-normal leading-5 max-md:hidden"
-                                        >+84 969 678 760</span
-                                    >
-                                </div>
-                                <button
-                                    class="font-bold bg-linearBtn text-black px-4 rounded-[32px] py-[14px] max-md:hidden shadow-btn"
-                                >
-                                    PLAN MY TOUR
-                                </button>
-                            </div>
-                        </nav>
-                        <h1
-                            class="!font-pop w-full max-md:tracking-winder uppercase text-[100px] font-bold mt-[121px] max-md:mt-[39px] max-md:text-[30px] leading-[124%]"
-                        >
-                            BEGINS
-                            <span class="header-text-tour bg-linearTour"
-                                >TOUR</span
-                            >
-                            WITH <br />
-                            A SINGLE STEP
-                        </h1>
-                        <div class="md:mt-8">
-                            <img
-                                class="w-[137px] h-[141px] max-md:w-[62px] max-md:h-[52px] object-contain"
-                                src="./images/discovery.png"
-                                alt=""
-                            />
-                        </div>
-                    </div>
-                </section>
-                <div
-                    class="bg-linearBlend mix-blend-normal absolute w-full h-[228px] max-md:h-[79px] left-0 bottom-0"
-                ></div>
-            </header>
-
-            <!-- LIST CONTACT  -->
-            <ul
-                class="z-[99999] list-contact flex flex-col gap-y-6 max-md:gap-y-2 max-md:top-[50%] max-md:-translate-x-[50%] list-none fixed bottom-[27px] right-[42px] max-md:right-[16px]"
-            >
-                <li
-                    class="flex items-center justify-center w-12 h-12 rounded-full cursor-pointer bg-linearTour max-md:w-8 max-md:h-8"
-                >
-                    <img
-                        class="w-7 h-7 max-md:w-4 max-md:h-4"
-                        src="./images/zalo.svg"
-                        alt=""
-                    />
-                </li>
-                <li
-                    class="flex items-center justify-center w-12 h-12 rounded-full cursor-pointer bg-linearTour max-md:w-8 max-md:h-8"
-                >
-                    <img
-                        class="w-7 h-7 max-md:w-4 max-md:h-4"
-                        src="./images/mess.svg"
-                        alt=""
-                    />
-                </li>
-                <li
-                    class="flex items-center justify-center w-12 h-12 rounded-full cursor-pointer bg-linearTour max-md:w-8 max-md:h-8"
-                >
-                    <img
-                        class="w-7 h-7 max-md:w-4 max-md:h-4"
-                        src="./images/phone.svg"
-                        alt=""
-                    />
-                </li>
-            </ul>
-
-            <!-- main -->
-            <main>
-                <!-- Destination -->
-                <section
-                    id="destination"
-                    class="w-full md:pt-[122px] pt-16 px-[15px] md:px-[180px]"
-                >
-                    <h2
-                        class="font-pop font-bold text-[55px] max-md:text-2xl h-[61px] max-md:h-[26px] mb-6 md:mb-12"
-                    >
-                        TOP DESTINATIONS
-                    </h2>
-                    <div class="container-destination">
-                        <div class="destination-item1 destination-item">
-                            <img
-                                class="object-cover w-full h-full"
-                                src="./images/hoa-lu.png"
-                                alt=""
-                            />
-                            <div class="review">
-                                <span class="font-normal">4.8 / 5</span>
-                                <img
-                                    class="w-20 h-[16px] max-md:w-[50px] max-md:h-2"
-                                    src="./images/star.svg"
-                                    alt=""
-                                />
-                            </div>
-                            <div
-                                class="absolute bottom-3 left-3 max-md:bottom-2 max-md:left-2"
-                            >
-                                <div class="flex items-center mb-2 gap-x-1">
-                                    <img
-                                        class="w-4 h-4 object-cover max-md:w-3 max-md:h-[15px]"
-                                        src="./images/map-pin.svg"
-                                        alt=""
-                                    />
-                                    <span
-                                        class="text-sm font-medium font-pop max-md:font-normal address"
-                                        >Nghe An, Viet Nam</span
-                                    >
-                                </div>
-                                <div>
-                                    <h3
-                                        class="font-pop font-bold text-2xl leading-[25px] max-md:text-sm max-md:leading-[21px]"
-                                    >
-                                        Hoa Lu <br />
-                                        ancient capital Ninh Binh
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="destination-item2 destination-item">
-                            <img
-                                class="object-cover w-full h-full"
-                                src="./images/pu-luong.png"
-                                alt=""
-                            />
-                            <div class="review">
-                                <span class="font-normal">4.8 / 5</span>
-                                <img
-                                    class="w-20 h-[16px] max-md:w-[50px] max-md:h-2"
-                                    src="./images/star.svg"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="absolute bottom-3 left-3">
-                                <div class="flex items-center mb-2 gap-x-1">
-                                    <img
-                                        class="w-4 h-4 object-cover max-md:w-3 max-md:h-[15px]"
-                                        src="./images/map-pin.svg"
-                                        alt=""
-                                    />
-                                    <span
-                                        class="text-sm font-medium font-pop max-md:font-normal address"
-                                        >Nghe An, Viet Nam</span
-                                    >
-                                </div>
-                                <div>
-                                    <h3
-                                        class="font-pop font-bold text-2xl leading-[25px] max-md:text-sm max-md:leading-[21px]"
-                                    >
-                                        PU LUONG <br />
-                                        Heaven’s Land
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="destination-item3 destination-item">
-                            <img
-                                class="object-cover w-full h-full"
-                                src="./images/nha-trang.png"
-                                alt=""
-                            />
-                            <div class="review">
-                                <span class="font-normal">4.8 / 5</span>
-                                <img
-                                    class="w-20 h-[16px] max-md:w-[50px] max-md:h-2"
-                                    src="./images/star.svg"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="absolute bottom-3 left-3">
-                                <div class="flex items-center mb-2 gap-x-1">
-                                    <img
-                                        class="w-4 h-4 object-cover max-md:w-3 max-md:h-[15px]"
-                                        src="./images/map-pin.svg"
-                                        alt=""
-                                    />
-                                    <span
-                                        class="text-sm font-medium font-pop max-md:font-normal address"
-                                        >Nghe An, Viet Nam</span
-                                    >
-                                </div>
-                                <div>
-                                    <h3
-                                        class="font-pop font-bold text-2xl leading-[25px] max-md:text-sm max-md:leading-[21px]"
-                                    >
-                                        NHA TRANG <br />
-                                        resort beach boss
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="destination-item4">
-                            <div class="item4-child1 destination-item">
-                                <img
-                                    class="object-cover w-full h-full"
-                                    src="./images/ly-son.png"
-                                    alt=""
-                                />
-                                <div class="review">
-                                    <span class="font-normal">4.8 / 5</span>
-                                    <img
-                                        class="w-20 h-[16px] max-md:w-[50px] max-md:h-2"
-                                        src="./images/star.svg"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="absolute bottom-3 left-3">
-                                    <div class="flex items-center mb-2 gap-x-1">
-                                        <img
-                                            class="w-4 h-4 object-cover max-md:w-3 max-md:h-[15px]"
-                                            src="./images/map-pin.svg"
-                                            alt=""
-                                        />
-                                        <span
-                                            class="text-sm font-medium font-pop max-md:font-normal address"
-                                            >Nghe An, Viet Nam</span
-                                        >
-                                    </div>
-                                    <div>
-                                        <h3
-                                            class="font-pop font-bold text-2xl leading-[25px] max-md:text-sm max-md:leading-[21px]"
-                                        >
-                                            LY SON <br />
-                                            beach island
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item4-child2 destination-item">
-                                <img
-                                    class="object-cover w-full h-full"
-                                    src="./images/phu-quoc.png"
-                                    alt=""
-                                />
-                                <div class="review">
-                                    <span class="font-normal">4.8 / 5</span>
-                                    <img
-                                        class="w-20 h-[16px] max-md:w-[50px] max-md:h-2"
-                                        src="./images/star.svg"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="absolute bottom-3 left-3">
-                                    <div class="flex items-center mb-2 gap-x-1">
-                                        <img
-                                            class="w-4 h-4 object-cover max-md:w-3 max-md:h-[15px]"
-                                            src="./images/map-pin.svg"
-                                            alt=""
-                                        />
-                                        <span
-                                            class="text-sm font-medium font-pop max-md:font-normal address"
-                                            >Nghe An, Viet Nam</span
-                                        >
-                                    </div>
-                                    <div>
-                                        <h3
-                                            class="font-pop font-bold text-2xl leading-[25px] max-md:text-sm max-md:leading-[21px]"
-                                        >
-                                            PHU QUOC <br />
-                                            Island
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="destination-item5 destination-item">
-                            <img
-                                class="object-cover w-full h-full"
-                                src="./images/con-cat.png"
-                                alt=""
-                            />
-                            <div class="review">
-                                <span class="font-normal">4.8 / 5</span>
-                                <img
-                                    class="w-20 h-[16px] max-md:w-[50px] max-md:h-2"
-                                    src="./images/star.svg"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="absolute bottom-3 left-3">
-                                <div class="flex items-center mb-2 gap-x-1">
-                                    <img
-                                        class="w-4 h-4 object-cover max-md:w-3 max-md:h-[15px]"
-                                        src="./images/map-pin.svg"
-                                        alt=""
-                                    />
-                                    <span
-                                        class="text-sm font-medium font-pop max-md:font-normal address"
-                                        >Nghe An, Viet Nam</span
-                                    >
-                                </div>
-                                <div>
-                                    <h3
-                                        class="font-pop font-bold text-2xl leading-[25px] max-md:text-sm max-md:leading-[21px]"
-                                    >
-                                        CON CAT <br />
-                                        bay’s heaven
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- About Us -->
-
-                <section
-                    class="md:h-[1088px] md:pb-[120px] md:pt-[263px] py-16 px-[15px] md:pl-[180px] md:pr-[76px] relative about"
-                >
-                    <div class="max-w-[604px] w-full">
-                        <h2
-                            class="font-pop font-bold text-[55px] max-md:text-2xl tracking-[0.0025em] max-md:h-[26px]"
-                        >
-                            ABOUT US
-                        </h2>
-                        <p
-                            class="font-normal tracking-[0.005em] leading-[19.5px] description-about max-md:!hidden mb-6"
-                        >
-                            If you are planning travel for a vacation in Vietnam
-                            with your family, your friend group, your spouse or
-                            with yourself, you might need a personalized trip
-                            planner. Connek trip shall be helpful for you.
-                            <br />
-                            When traveling, time is a resource you don’t want to
-                            waste. Our job as your trip consultant is to help
-                            you plan your dream itineraries, stay up to date the
-                            information of travel restrictions and changes after
-                            Covid-19, get the “Insider” knowledge of the
-                            destination, protect your from scams and fraud, deal
-                            with last-minute changes and emergencies, etc. We do
-                            our best to help you receive the most value for your
-                            money. You will have complete peace of mind knowing
-                            there’re someone take care for you, 24/7 during your
-                            trip, and that is invaluable. “
-                        </p>
-                        <p
-                            class="md:!hidden tracking-[0.01em] leading-7 font-normal text-sm my-4 description-about-mb"
-                        >
-                            <span class="text-base font-bold leading-8"
-                                >Connek Trip's mission</span
-                            >: Create connections between tourists and local
-                            cultural values. We do everything for a beautiful
-                            country Vietnam that is impressed by many
-                            international friends when it comes to us. We are
-                            proud to be Vietnamese children, we have many
-                            beauties from the image of women to famous names.
-                            The landscape creates an unforgettable highlight for
-                            Vietnam
-                        </p>
-                        <button
-                            class="max-md:px-4 shadow-btn max-md:py-[10px] max-md:mb-5 font-bold text-[#002634] tracking-[0.0125em] leading-5 bg-linearBtn px-4 py-[14px] rounded-3xl"
-                        >
-                            Read more
-                        </button>
-                        <div
-                            class="relative max-md:flex max-md:justify-between"
-                        >
-                            <div
-                                class="md:absolute md:top-[154px] md:left-0 max-md:w-[51px]"
-                            >
-                                <h3
-                                    class="font-pop font-bold text-[38px] text-xl max-md:leading-[30px] text-center"
-                                >
-                                    2500
-                                </h3>
-                                <span
-                                    class="font-normal max-md:text-sm max-md:leading-[17px] tracking-[0.0025em] block text-center"
-                                    >Happy guests</span
-                                >
-                                <div class="flex justify-center md:mt-4">
-                                    <img
-                                        class="object-contain md:w-16 md:h-16"
-                                        src="./images/Heart.svg"
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                            <div
-                                class="md:absolute md:top-0 md:right-0 max-md:w-[92px]"
-                            >
-                                <h3
-                                    class="font-pop font-bold text-[38px] max-md:text-xl text-center text-xl h-[22px] md:h-[42px] md:mb-1"
-                                >
-                                    5
-                                </h3>
-                                <img src="./images/owl.png" alt="" />
-                                <span
-                                    class="font-normal max-md:text-center max-md:block max-md:text-sm max-md:leading-[17px] tracking-[0.0025em]"
-                                    >Tripadvisor rate</span
-                                >
-                                <div
-                                    class="mt-2 md:w-16 md:h-16 md:mt-4 max-md:flex max-md:justify-center"
-                                >
-                                    <img
-                                        class="object-cover w-8 h-8 md:w-full md:h-full"
-                                        src="./images/double-star.svg"
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                            <div
-                                class="md:absolute md:top-[60px] md:right-[245px] max-md:w-[47px]"
-                            >
-                                <h3
-                                    class="font-pop font-bold text-[38px] max-md:text-xl max-md:text-center max-md:leading-[30px]"
-                                >
-                                    8125
-                                </h3>
-                                <span
-                                    class="font-normal max-md:text-center max-md:block max-md:text-sm max-md:leading-[17px] tracking-[0.0025em]"
-                                    >Trips served</span
-                                >
-                                <div
-                                    class="mt-2 md:w-16 md:h-16 md:mt-4 max-md:flex max-md:justify-center"
-                                >
-                                    <img
-                                        class="object-cover w-8 h-8 md:w-full md:h-full"
-                                        src="./images/user.svg"
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="w-full h-[312px] lg:w-[740px] 3xl:w-[788px] md:h-[848px] container-mask md:absolute md:top-[120px] md:right-[76px] max-md:mt-4"
-                    >
-                        <img
-                            class="w-full h-full"
-                            src="./images/union-pc.png"
-                            alt=""
-                        />
-                    </div>
-                </section>
-
-                <!-- TOURS & EXPERIENCE -->
-
-                <section class="tour max-md:px-[15px] md:relative">
-                    <h2
-                        class="text-2xl font-bold uppercase font-pop tracking-[0.0025em] leading-[26px] mb-6 md:hidden"
-                    >
-                        PRODUCT SUPPLY
-                    </h2>
-
-                    <h2
-                        class="max-md:hidden font-pop font-bold text-[55px] mb-6 ml-[120px]"
-                    >
-                        TOURS & EXPERIENCE
-                    </h2>
-                    <div
-                        class="max-md:hidden w-[572px] pl-[180px] h-[743px] pr-[44.5px] py-[54px] bg-[#222222] absolute top-[106.5px] left-0 z-50"
-                    >
-                        <ul class="flex flex-col list-none list-location">
-                            <li
-                                class="font-normal text-sm cursor-pointer leading-[17px] tracking-[0.0025em] items-center justify-center"
-                            >
-                                <p
-                                    class="hidden w-1 h-1 mr-1 rounded-full bg-linearTour"
-                                ></p>
-                                MOUTAINOUS NORTHERN VIETNAM
-                            </li>
-                            <li
-                                class="font-normal text-sm cursor-pointer leading-[17px] tracking-[0.0025em] items-center justify-center"
-                            >
-                                <p
-                                    class="hidden w-1 h-1 mr-1 rounded-full bg-linearTour"
-                                ></p>
-                                MOUTAINOUS NORTHERN VIETNAM
-                            </li>
-                            <li
-                                class="font-normal text-sm cursor-pointer leading-[17px] tracking-[0.0025em] items-center justify-center"
-                            >
-                                <p
-                                    class="hidden w-1 h-1 mr-1 rounded-full bg-linearTour"
-                                ></p>
-                                MOUTAINOUS NORTHERN VIETNAM
-                            </li>
-                        </ul>
-                        <div
-                            class="absolute flex flex-col items-center bottom-[57px] left-[54%]"
-                        >
-                            <div class="h-11 w-[1px] bg-white"></div>
-                            <div class="my-4">
-                                <img
-                                    class="w-[18px] h-6 object-cover"
-                                    src="./images/logo-icon.svg"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="h-11 w-[1px] bg-white"></div>
-                            <div
-                                class="w-[96px] h-12 rounded-[80px] bg-black mt-8 mb-4"
-                            ></div>
-                        </div>
-                    </div>
-
-                    <div class="max-md:mb-4 max-md:relative list-tour">
-                        <div class="relative w-[213px] md:w-[427px]">
-                            <h3
-                                class="uppercase font-bold text-sm md:hidden leading-[17px] text-center mb-4"
-                            >
-                                MOUTAINOUS
-                            </h3>
-                            <div class="w-full h-[266px] md:h-[690px]">
-                                <img
-                                    class="object-cover w-full h-full rounded-[16px] overflow-hidden"
-                                    src="./images/nha-trang.png"
-                                    alt=""
-                                />
-                            </div>
-                            <h3
-                                class="max-md:hidden absolute font-pop font-bold bottom-6 left-1/2 -translate-x-1/2 item-tour-name text-xl text-center tracking-[0.0015em] leading-[30px] uppercase"
-                            >
-                                HA LONG BAY
-                            </h3>
-                            <div
-                                class="absolute left-0 item-tour-description bottom-4 md:hidden md:bottom-6"
-                            >
-                                <div class="flex justify-center mb-3">
-                                    <img
-                                        class="object-cover w-8 h-[42px] md:w-[86px] md:h-[112px]"
-                                        src="./images/logo-icon.svg"
-                                        alt=""
-                                    />
-                                </div>
-                                <p
-                                    class="tour-description font-normal text-sm leading-[17px] text-center tracking-[0.0025em]"
-                                >
-                                    Amet minim mollit non deserunt ullamco est
-                                    sit aliqua dolor do amet sint. Velit officia
-                                    consequat.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="relative w-[213px] md:w-[427px]">
-                            <h3
-                                class="uppercase font-bold text-sm md:hidden leading-[17px] text-center mb-4"
-                            >
-                                MOUTAINOUS
-                            </h3>
-                            <div class="w-full h-[266px] md:h-[690px]">
-                                <img
-                                    class="object-cover w-full h-full rounded-[16px] overflow-hidden"
-                                    src="./images/con-cat.png"
-                                    alt=""
-                                />
-                            </div>
-                            <h3
-                                class="max-md:hidden absolute font-pop font-bold bottom-6 left-1/2 -translate-x-1/2 item-tour-name text-xl text-center tracking-[0.0015em] leading-[30px] uppercase"
-                            >
-                                HA LONG BAY
-                            </h3>
-                            <div
-                                class="absolute left-0 item-tour-description bottom-4 md:hidden"
-                            >
-                                <div class="flex justify-center mb-3">
-                                    <img
-                                        class="object-cover w-8 h-[42px] md:w-[86px] md:h-[112px]"
-                                        src="./images/logo-icon.svg"
-                                        alt=""
-                                    />
-                                </div>
-                                <p
-                                    class="tour-description font-normal text-sm leading-[17px] text-center tracking-[0.025em]"
-                                >
-                                    Amet minim mollit non deserunt ullamco est
-                                    sit aliqua dolor do amet sint. Velit officia
-                                    consequat.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="relative w-[213px] md:w-[427px]">
-                            <h3
-                                class="uppercase font-bold text-sm md:hidden leading-[17px] text-center mb-4"
-                            >
-                                MOUTAINOUS
-                            </h3>
-                            <div class="w-full h-[266px] md:h-[690px]">
-                                <img
-                                    class="object-cover w-full h-full rounded-[16px] overflow-hidden"
-                                    src="./images/hoa-lu.png"
-                                    alt=""
-                                />
-                            </div>
-                            <h3
-                                class="max-md:hidden absolute font-pop font-bold bottom-6 left-1/2 -translate-x-1/2 item-tour-name text-xl text-center tracking-[0.0015em] leading-[30px] uppercase"
-                            >
-                                HA LONG BAY
-                            </h3>
-                            <div
-                                class="absolute left-0 item-tour-description bottom-4 md:hidden"
-                            >
-                                <div class="flex justify-center mb-3">
-                                    <img
-                                        class="object-cover w-8 h-[42px] md:w-[86px] md:h-[112px]"
-                                        src="./images/logo-icon.svg"
-                                        alt=""
-                                    />
-                                </div>
-                                <p
-                                    class="tour-description font-normal text-sm leading-[17px] text-center tracking-[0.025em]"
-                                >
-                                    Amet minim mollit non deserunt ullamco est
-                                    sit aliqua dolor do amet sint. Velit officia
-                                    consequat.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="container-slick-btn w-20 h-10 rounded-[80px] bg-black md:hidden"
-                    ></div>
-                </section>
-
-                <!-- CONNECTING & FOLLOWING -->
-
-                <section
-                    class="connect px-[15px] pt-[86px] md:pt-[138px] pb-16 md:pb-[118px] md:pl-[180px] md:!pr-0 md:relative"
-                >
-                    <h2
-                        class="uppercase md:absolute md:left-[593px] font-pop font-bold md:text-[55px] md:leading-[83px] text-2xl tracking-[0.0025em] leading-6 max-md:mb-6"
-                    >
-                        CONNECTING & FOLLOWING
-                    </h2>
-                    <div
-                        class="relative md:w-[392px] w-[calc(100% - 30px)] md:h-[548px] h-[406px]"
-                    >
-                        <img
-                            class="object-contain w-full h-full"
-                            src="./images/Subtract.png"
-                            alt=""
-                        />
-                    </div>
-                    <p
-                        class="md:absolute md:left-[593px] md:w-[604px] md:top-[290px] tracking-[0.01em] leading-[23px] md:leading-7 font-normal text-sm max-md:mt-[60px] max-md:mb-[26px] description-about-mb"
-                    >
-                        <span
-                            class="text-base font-bold leading-[26px] md:leading-8"
-                            >Connek Trip's mission</span
-                        >: Create connections between tourists and local
-                        cultural values. We do everything for a beautiful
-                        country Vietnam that is impressed by many international
-                        friends when it comes to us. We are proud to be
-                        Vietnamese children, we have many beauties from the
-                        image of women to famous names. The landscape creates an
-                        unforgettable highlight for Vietnam
-                    </p>
-                    <div class="relative flex justify-end w-full h-full">
-                        <div
-                            class="h-[488px] max-md:hidden -mt-[179px]"
-                            data-set="vhl-pc"
-                        >
-                            <img
-                                class="w-full h-full"
-                                src="./images/vinhhalong.png"
-                                alt=""
-                            />
-                        </div>
-                        <div class="h-[100px] w-[230px] md:hidden">
-                            <img
-                                class="object-contain w-full h-full"
-                                src="./images/vinhhalong-mb.png"
-                                alt=""
-                            />
-                        </div>
-                        <div
-                            class="absolute left-0 -translate-y-1/2 top-1/2 md:top-[30%]"
-                        >
-                            <img
-                                class="w-[109px] h-9 md:w-[633px] md:h-[210px]"
-                                src="./images/Vietnam.svg"
-                                alt=""
-                            />
-                        </div>
-                    </div>
-                </section>
-
-                <!-- CUSTOMER’S REVIEW -->
-                <section class="customer relative px-[15px] md:px-[180px]">
-                    <div class="list-review">
-                        <div class="item-review">
-                            <h2
-                                class="uppercase font-pop font-bold md:text-[50px] md:leading-[83px] text-2xl tracking-[0.0025em] leading-[26px]"
-                            >
-                                CUSTOMER’S REVIEW
-                            </h2>
-                            <button
-                                class="max-md:px-4 shadow-btn md:mt-6 max-md:py-[10px] max-md:mb-6 max-md:mt-4 font-bold text-[#002634] tracking-[0.0125em] leading-5 bg-linearBtn px-4 py-[14px] rounded-3xl"
-                            >
-                                Book your trip
-                            </button>
-                        </div>
-                        <div class="item-review">
-                            <img
-                                class="w-[212px] h-full max-md:w-[82px] max-md:h-[82px]"
-                                src="./images/customer.png"
-                                alt=""
-                            />
-                            <div>
-                                <h3
-                                    class="text-lg 3xl:text-xl font-medium font-pop leading-[30px] max-md:mb-1 max-md:text-sm max-md:leading-5 max-md:tracking-[0.001em]"
-                                >
-                                    Lê Hoàng Hà (banking staff)
-                                </h3>
-                                <img src="./images/star.svg" alt="" />
-                                <p
-                                    class="my-7 font-normal leading-[23.68px] max-md:my-2 max-md:text-sm max-md:leading-[17px] max-md:tracking-[0.0025em]"
-                                >
-                                    Amet minim mollit non deserunt ullamco est
-                                    sit aliqua ullamco est sit aliqua ullamco
-                                    est sit aliqua
-                                </p>
-                                <p
-                                    class="italic font-light text-sm leading-[17px] max-md:absolute max-md:bottom-2 max-md:left-2"
-                                >
-                                    “Amet minim mollit non deserunt ests ullamco
-                                    est sit aliqua”.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="item-review">
-                            <img
-                                class="w-[212px] h-full max-md:w-[82px] max-md:h-[82px]"
-                                src="./images/customer.png"
-                                alt=""
-                            />
-                            <div>
-                                <h3
-                                    class="text-lg 3xl:text-xl font-medium font-pop leading-[30px] max-md:mb-1 max-md:text-sm max-md:leading-5 max-md:tracking-[0.001em]"
-                                >
-                                    Lê Hoàng Hà (banking staff)
-                                </h3>
-                                <img src="./images/star.svg" alt="" />
-                                <p
-                                    class="my-7 font-normal leading-[23.68px] max-md:my-2 max-md:text-sm max-md:leading-[17px] max-md:tracking-[0.0025em]"
-                                >
-                                    Amet minim mollit non deserunt ullamco est
-                                    sit aliqua ullamco est sit aliqua ullamco
-                                    est sit aliqua
-                                </p>
-                                <p
-                                    class="italic font-light text-sm leading-[17px] max-md:absolute max-md:bottom-2 max-md:left-2"
-                                >
-                                    “Amet minim mollit non deserunt ests ullamco
-                                    est sit aliqua”.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="item-review">
-                            <img
-                                class="w-[212px] h-full max-md:w-[82px] max-md:h-[82px]"
-                                src="./images/customer.png"
-                                alt=""
-                            />
-                            <div>
-                                <h3
-                                    class="text-lg 3xl:text-xl font-medium font-pop leading-[30px] max-md:mb-1 max-md:text-sm max-md:leading-5 max-md:tracking-[0.001em]"
-                                >
-                                    Lê Hoàng Hà (banking staff)
-                                </h3>
-                                <img src="./images/star.svg" alt="" />
-                                <p
-                                    class="my-7 font-normal leading-[23.68px] max-md:my-2 max-md:text-sm max-md:leading-[17px] max-md:tracking-[0.0025em]"
-                                >
-                                    Amet minim mollit non deserunt ullamco est
-                                    sit aliqua ullamco est sit aliqua ullamco
-                                    est sit aliqua
-                                </p>
-                                <p
-                                    class="italic font-light text-sm leading-[17px] max-md:absolute max-md:bottom-2 max-md:left-2"
-                                >
-                                    “Amet minim mollit non deserunt ests ullamco
-                                    est sit aliqua”.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="item-review max-md:!hidden">
-                            <img
-                                class="w-[212px] h-full"
-                                src="./images/customer.png"
-                                alt=""
-                            />
-                            <div>
-                                <h3
-                                    class="text-lg 3xl:text-xl font-medium font-pop leading-[30px]"
-                                >
-                                    Lê Hoàng Hà (banking staff)
-                                </h3>
-                                <img src="./images/star.svg" alt="" />
-                                <p class="my-7 font-normal leading-[23.68px]">
-                                    Amet minim mollit non deserunt ullamco est
-                                    sit aliqua ullamco est sit aliqua ullamco
-                                    est sit aliqua
-                                </p>
-                                <p
-                                    class="italic font-light text-sm leading-[17px]"
-                                >
-                                    “Amet minim mollit non deserunt ests ullamco
-                                    est sit aliqua”.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="item-review max-md:!hidden">
-                            <img
-                                class="w-[212px] h-full"
-                                src="./images/customer.png"
-                                alt=""
-                            />
-                            <div>
-                                <h3
-                                    class="text-lg 3xl:text-xl font-medium font-pop leading-[30px]"
-                                >
-                                    Lê Hoàng Hà (banking staff)
-                                </h3>
-                                <img src="./images/star.svg" alt="" />
-                                <p class="my-7 font-normal leading-[23.68px]">
-                                    Amet minim mollit non deserunt ullamco est
-                                    sit aliqua ullamco est sit aliqua ullamco
-                                    est sit aliqua
-                                </p>
-                                <p
-                                    class="italic font-light text-sm leading-[17px]"
-                                >
-                                    “Amet minim mollit non deserunt ests ullamco
-                                    est sit aliqua”.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </main>
-
-            <!-- footer -->
-            <footer
-                class="mt-[46px] md:mt-[120px] w-full h-[425px] md:h-[850px] relative !overflow-hidden"
-            >
-                <img
-                    class="w-full h-full md:hidden"
-                    src="./images/footer-mb.png"
-                    alt=""
-                />
-                <img
-                    class="w-full h-full max-md:hidden"
-                    src="./images/footer.png"
-                    alt=""
-                />
-                <div
-                    class="absolute px-[15px] top-[61px] md:top-20 left-0 right-0 flex flex-col items-center"
-                >
-                    <h1
-                        class="font-bold text-center font-pop text-[30px] md:text-[88px] md:leading-[85px] uppercase leading-[30px] md:-tracking-[0.015em] tracking-[0.0015em]"
-                    >
-                        FEEL YOUR TOUR AT <br />
-                        <span
-                            class="fell-tour text-[43px] md:text-[130px] md:leading-[132px] leading-[43px] bg-linearTour"
-                            >CONNEK TRIP</span
-                        >
-                    </h1>
-                    <img
-                        class="w-[84px] h-[71.5px] mt-3 md:mt-[23px] md:w-[204px] md:h-[173px]"
-                        src="./images/connek-footer.svg"
-                        alt=""
-                    />
-                    <div
-                        class="font-normal text-sm md:text-base md:font-pop leading-[17px] md:leading-6 tracking-[0.0025em] md:tracking-[0.0015em] absolute top-[170px] md:top-[477px] left-0 right-0 px-[6px]"
-                    >
-                        <div class="flex justify-center gap-x-1 md:gap-x-2">
-                            <img
-                                class="md:w-8 md:h-8"
-                                src="./images/map-pin-footer.svg"
-                                alt=""
-                            /><span class="flex items-center"
-                                >98 Hang Gai, Hoan Kiem, Hanoi, Vietnam</span
-                            >
-                        </div>
-                        <div
-                            class="flex justify-center my-2 md:my-4 gap-x-1 md:gap-x-2"
-                        >
-                            <img
-                                class="md:w-8 md:h-8"
-                                src="./images/mail.svg"
-                                alt=""
-                            /><span class="flex items-center"
-                                >Info@connektrip.com</span
-                            >
-                        </div>
-                        <div class="flex justify-center gap-x-1 md:gap-x-2">
-                            <img
-                                class="md:w-8 md:h-8"
-                                src="./images/phone-footer.svg"
-                                alt=""
-                            /><span class="flex items-center"
-                                >+84 969 678 760</span
-                            >
-                        </div>
-                        <div class="flex justify-center my-4 gap-x-4 md:mt-16">
-                            <img
-                                class="w-4 h-4 cursor-pointer md:w-12 md:h-12"
-                                src="./images/what.svg"
-                                alt=""
-                            />
-                            <img
-                                class="w-4 h-4 cursor-pointer md:w-12 md:h-12"
-                                src="./images/in.svg"
-                                alt=""
-                            />
-                            <img
-                                class="w-4 h-4 cursor-pointer md:w-12 md:h-12"
-                                src="./images/tik.svg"
-                                alt=""
-                            />
-                            <img
-                                class="w-4 h-4 cursor-pointer md:w-12 md:h-12"
-                                src="./images/fb.svg"
-                                alt=""
-                            />
-                        </div>
-                        <p
-                            class="font-normal tracking-[0.004em] md:tracking-[0.0025em] text-xs md:text-sm md:leading-[17px] leading-[15px] text-center"
-                        >
-                            (c) 2022 Published by Okhub
-                        </p>
-                    </div>
-                </div>
-
-                <div
-                    class="absolute w-[268px] h-[268px] -left-[64px] -bottom-[71px] bg-linearBlueBlur3 md:w-[712px] md:h-[712px] md:left-[762px] md:bottom-0 md:bg-linearOrangeBlur15 blur-config md:blur-[60px]"
-                ></div>
-            </footer>
+<body>
+    <div class="relative w-full overflow-hidden App">
+        <!-- background -->
+        <div
+            class="absolute w-[375px] h-[375px] md:w-[909px] md:h-[909px] -left-[91px] top-[154px] md:-left-[369px] md:top-[995px] bg-linearOrangeBlur2 md:bg-linearOrangeBlur15 blur-config">
+        </div>
+        <div
+            class="absolute w-[374px] h-[374px] md:w-[491px] md:h-[491px] md:left-[1185px] md:top-[1171px] left-[106px] top-[296px] blur-config bg-linearBlueBlur25">
+        </div>
+        <div
+            class="absolute w-[268px] h-[268px] -left-[74px] top-[680px] md:w-[775px] md:h-[775px] md:-left-[355px] md:top-[1493px] blur-config bg-linearBlueBlur3 md:bg-linearBlueBlur15">
+        </div>
+        <div
+            class="absolute w-[375px] md:w-[1166px] md:h-[1166px] md:left-[935px] md:top-[1549px] h-[375px] left-[49px] top-[665px] bg-linearOrangeBlur2 md:bg-linearOrangeBlur15 blur-config">
+        </div>
+        <div
+            class="absolute w-[375px] h-[375px] left-[49px] top-[1155px] md:w-[1166px] md:h-[1166px] md:-left-[430px] md:top-[1975px] bg-linearOrangeBlur2 md:bg-linearOrangeBlur1 blur-config">
+        </div>
+        <div
+            class="absolute w-[268px] h-[268px] -left-[64px] top-[1470px] bg-linearBlueBlur3 md:w-[1061px] md:h-[1061px] md:left-[803px] md:top-[2737px] md:bg-linearBlueBlur15 blur-config">
+        </div>
+        <div
+            class="absolute w-[331px] h-[331px] -left-[11px] top-[1707px] bg-linearOrangeBlur2 md:w-[1166px] md:h-[1166px] md:-left-[350px] md:top-[2896px] md:bg-linearBlueBlur15 blur-config">
+        </div>
+        <div
+            class="absolute w-[268px] h-[268px] -left-[64px] top-[2080px] bg-linearBlueBlur3 md:w-[770px] md:h-[770px] md:left-[628px] md:top-[3458px] md:bg-linearOrangeBlur15 blur-config">
+        </div>
+        <div
+            class="absolute w-[304px] h-[304px] -left-[110x] top-[2442px] bg-linearBlueBlur3 md:w-[662px] md:h-[662px] md:left-[1100px] md:top-[4548px] md:bg-linearOrangeBlur15 blur-config">
+        </div>
+        <div
+            class="absolute w-[331px] h-[331px] left-[79px] top-[2607px] bg-linearOrangeBlur2 md:w-[1166px] md:h-[1166px] md:-left-[368px] md:top-[4693px] md:bg-linearOrangeBlur15 blur-config">
+        </div>
+        <div
+            class="absolute w-[331px] h-[331px] -left-[121px] top-[3697px] bg-linearOrangeBlur2 md:w-[1061px] md:h-[1061px] md:left-[268px] md:top-[4946px] md:bg-linearRedBlur1 blur-config">
+        </div>
+        <div
+            class="absolute w-[331px] h-[331px] left-[159px] top-[4127px] bg-linearOrangeBlur2 md:w-[1005px] md:h-[1005px] md:left-[781px] md:top-[5072px] md:bg-linearBlueBlur1 blur-config">
+        </div>
+        <div
+            class="absolute max-md:hidden w-[919px] h-[919px] -left-[242px] top-[5483px] bg-linearBlueBlur25 blur-config">
+        </div>
+        <div class="absolute max-md:hidden -left-[10px] top-[1664px] rotate-180">
+            <img class="h-[563px]" src="./images/logo-background.png" alt="" />
+        </div>
+        <div class="absolute max-md:hidden -right-2 top-[5436px]">
+            <img src="./images/logo-background.png" alt="" />
         </div>
 
-        <!-- Import script -->
-        <script
-            type="text/javascript"
-            src="https://code.jquery.com/jquery-1.11.0.min.js"
-        ></script>
-        <script
-            type="text/javascript"
-            src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-        ></script>
-        <script
-            type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-        ></script>
-        <script src="./js/index.js"></script>
-    </body>
+        <!-- banner slide -->
+        <header class="relative">
+            <div class="head-banner-slide">
+                <div class="w-full h-[850px] max-md:h-[301px]">
+                    <img class="object-cover w-full h-full" src="./images/bg-head.png" alt="" />
+                </div>
+                <div class="w-full h-[850px] max-md:h-[301px]">
+                    <img class="object-cover w-full h-full" src="./images/bg.jpg" alt="" />
+                </div>
+                <div class="w-full h-[850px] max-md:h-[301px]">
+                    <img class="object-cover w-full h-full" src="./images/bg1.jpg" alt="" />
+                </div>
+            </div>
+            <section class="h-[850px] max-md:h-[301px] w-full absolute top-4 max-md:top-2 px-[180px] max-md:px-[15px]">
+                <div class="w-full">
+                    <nav class="flex justify-between w-full header-nav">
+                        <div class="cursor-pointer max-md:flex max-md:items-center">
+                            <a href="#">
+                                <img class="max-md:w-12 max-md:h-9" src="./images/logo.png" alt="" />
+                            </a>
+                        </div>
+                        <ul class="flex items-center list-none gap-x-8 max-md:hidden">
+                            <li class="cursor-pointer select-none">Home</li>
+                            <li class="cursor-pointer select-none">
+                                <a href="#destination">Destinations</a>
+                            </li>
+                            <li class="cursor-pointer select-none">
+                                Travel styles
+                            </li>
+                            <li class="cursor-pointer select-none">
+                                About us
+                            </li>
+                            <li class="cursor-pointer select-none">Blog</li>
+                            <li class="cursor-pointer select-none">
+                                Contact
+                            </li>
+                        </ul>
+                        <div class="flex flex-col justify-evenly max-md:justify-center">
+                            <div class="flex gap-x-[6px] cursor-pointer">
+                                <img class="w-5 h-5 max-md:w-[15px] max-md:h-4" src="./images/phone.svg" alt="" />
+
+                                <span class="font-normal leading-5 max-md:hidden">+84 969 678 760</span>
+                            </div>
+                            <button
+                                class="font-bold bg-linearBtn text-black px-4 rounded-[32px] py-[14px] max-md:hidden shadow-btn">
+                                PLAN MY TOUR
+                            </button>
+                        </div>
+                    </nav>
+                    <h1
+                        class="!font-pop w-full max-md:tracking-winder uppercase text-[100px] font-bold mt-[121px] max-md:mt-[39px] max-md:text-[30px] leading-[124%]">
+                        BEGINS
+                        <span class="header-text-tour bg-linearTour">TOUR</span>
+                        WITH <br />
+                        A SINGLE STEP
+                    </h1>
+                    <div class="md:mt-8">
+                        <img class="w-[137px] h-[141px] max-md:w-[62px] max-md:h-[52px] object-contain"
+                            src="./images/discovery.png" alt="" />
+                    </div>
+                </div>
+            </section>
+            <div class="bg-linearBlend mix-blend-normal absolute w-full h-[228px] max-md:h-[79px] left-0 bottom-0">
+            </div>
+        </header>
+
+        <!-- LIST CONTACT  -->
+        <ul
+            class="z-[99999] list-contact flex flex-col gap-y-6 max-md:gap-y-2 max-md:top-[50%] max-md:-translate-x-[50%] list-none fixed bottom-[27px] right-[42px] max-md:right-[16px]">
+            <li
+                class="flex items-center justify-center w-12 h-12 rounded-full cursor-pointer bg-linearTour max-md:w-8 max-md:h-8">
+                <img class="w-7 h-7 max-md:w-4 max-md:h-4" src="./images/zalo.svg" alt="" />
+            </li>
+            <li
+                class="flex items-center justify-center w-12 h-12 rounded-full cursor-pointer bg-linearTour max-md:w-8 max-md:h-8">
+                <img class="w-7 h-7 max-md:w-4 max-md:h-4" src="./images/mess.svg" alt="" />
+            </li>
+            <li
+                class="flex items-center justify-center w-12 h-12 rounded-full cursor-pointer bg-linearTour max-md:w-8 max-md:h-8">
+                <img class="w-7 h-7 max-md:w-4 max-md:h-4" src="./images/phone.svg" alt="" />
+            </li>
+        </ul>
+
+        <!-- main -->
+        <main>
+            <!-- Destination -->
+            <section id="destination" class="w-full md:pt-[122px] pt-16 px-[15px] md:px-[180px]">
+                <h2 class="font-pop font-bold text-[55px] max-md:text-2xl h-[61px] max-md:h-[26px] mb-6 md:mb-12">
+                    TOP DESTINATIONS
+                </h2>
+                <div class="container-destination">
+                    <div class="destination-item1 destination-item">
+                        <img class="object-cover w-full h-full" src="./images/hoa-lu.png" alt="" />
+                        <div class="review">
+                            <span class="font-normal">4.8 / 5</span>
+                            <img class="w-20 h-[16px] max-md:w-[50px] max-md:h-2" src="./images/star.svg" alt="" />
+                        </div>
+                        <div class="absolute bottom-3 left-3 max-md:bottom-2 max-md:left-2">
+                            <div class="flex items-center mb-2 gap-x-1">
+                                <img class="w-4 h-4 object-cover max-md:w-3 max-md:h-[15px]" src="./images/map-pin.svg"
+                                    alt="" />
+                                <span class="text-sm font-medium font-pop max-md:font-normal address">Nghe An, Viet
+                                    Nam</span>
+                            </div>
+                            <div>
+                                <h3
+                                    class="font-pop font-bold text-2xl leading-[25px] max-md:text-sm max-md:leading-[21px]">
+                                    Hoa Lu <br />
+                                    ancient capital Ninh Binh
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-item2 destination-item">
+                        <img class="object-cover w-full h-full" src="./images/pu-luong.png" alt="" />
+                        <div class="review">
+                            <span class="font-normal">4.8 / 5</span>
+                            <img class="w-20 h-[16px] max-md:w-[50px] max-md:h-2" src="./images/star.svg" alt="" />
+                        </div>
+                        <div class="absolute bottom-3 left-3">
+                            <div class="flex items-center mb-2 gap-x-1">
+                                <img class="w-4 h-4 object-cover max-md:w-3 max-md:h-[15px]" src="./images/map-pin.svg"
+                                    alt="" />
+                                <span class="text-sm font-medium font-pop max-md:font-normal address">Nghe An, Viet
+                                    Nam</span>
+                            </div>
+                            <div>
+                                <h3
+                                    class="font-pop font-bold text-2xl leading-[25px] max-md:text-sm max-md:leading-[21px]">
+                                    PU LUONG <br />
+                                    Heaven’s Land
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-item3 destination-item">
+                        <img class="object-cover w-full h-full" src="./images/nha-trang.png" alt="" />
+                        <div class="review">
+                            <span class="font-normal">4.8 / 5</span>
+                            <img class="w-20 h-[16px] max-md:w-[50px] max-md:h-2" src="./images/star.svg" alt="" />
+                        </div>
+                        <div class="absolute bottom-3 left-3">
+                            <div class="flex items-center mb-2 gap-x-1">
+                                <img class="w-4 h-4 object-cover max-md:w-3 max-md:h-[15px]" src="./images/map-pin.svg"
+                                    alt="" />
+                                <span class="text-sm font-medium font-pop max-md:font-normal address">Nghe An, Viet
+                                    Nam</span>
+                            </div>
+                            <div>
+                                <h3
+                                    class="font-pop font-bold text-2xl leading-[25px] max-md:text-sm max-md:leading-[21px]">
+                                    NHA TRANG <br />
+                                    resort beach boss
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-item4">
+                        <div class="item4-child1 destination-item">
+                            <img class="object-cover w-full h-full" src="./images/ly-son.png" alt="" />
+                            <div class="review">
+                                <span class="font-normal">4.8 / 5</span>
+                                <img class="w-20 h-[16px] max-md:w-[50px] max-md:h-2" src="./images/star.svg" alt="" />
+                            </div>
+                            <div class="absolute bottom-3 left-3">
+                                <div class="flex items-center mb-2 gap-x-1">
+                                    <img class="w-4 h-4 object-cover max-md:w-3 max-md:h-[15px]"
+                                        src="./images/map-pin.svg" alt="" />
+                                    <span class="text-sm font-medium font-pop max-md:font-normal address">Nghe An, Viet
+                                        Nam</span>
+                                </div>
+                                <div>
+                                    <h3
+                                        class="font-pop font-bold text-2xl leading-[25px] max-md:text-sm max-md:leading-[21px]">
+                                        LY SON <br />
+                                        beach island
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item4-child2 destination-item">
+                            <img class="object-cover w-full h-full" src="./images/phu-quoc.png" alt="" />
+                            <div class="review">
+                                <span class="font-normal">4.8 / 5</span>
+                                <img class="w-20 h-[16px] max-md:w-[50px] max-md:h-2" src="./images/star.svg" alt="" />
+                            </div>
+                            <div class="absolute bottom-3 left-3">
+                                <div class="flex items-center mb-2 gap-x-1">
+                                    <img class="w-4 h-4 object-cover max-md:w-3 max-md:h-[15px]"
+                                        src="./images/map-pin.svg" alt="" />
+                                    <span class="text-sm font-medium font-pop max-md:font-normal address">Nghe An, Viet
+                                        Nam</span>
+                                </div>
+                                <div>
+                                    <h3
+                                        class="font-pop font-bold text-2xl leading-[25px] max-md:text-sm max-md:leading-[21px]">
+                                        PHU QUOC <br />
+                                        Island
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-item5 destination-item">
+                        <img class="object-cover w-full h-full" src="./images/con-cat.png" alt="" />
+                        <div class="review">
+                            <span class="font-normal">4.8 / 5</span>
+                            <img class="w-20 h-[16px] max-md:w-[50px] max-md:h-2" src="./images/star.svg" alt="" />
+                        </div>
+                        <div class="absolute bottom-3 left-3">
+                            <div class="flex items-center mb-2 gap-x-1">
+                                <img class="w-4 h-4 object-cover max-md:w-3 max-md:h-[15px]" src="./images/map-pin.svg"
+                                    alt="" />
+                                <span class="text-sm font-medium font-pop max-md:font-normal address">Nghe An, Viet
+                                    Nam</span>
+                            </div>
+                            <div>
+                                <h3
+                                    class="font-pop font-bold text-2xl leading-[25px] max-md:text-sm max-md:leading-[21px]">
+                                    CON CAT <br />
+                                    bay’s heaven
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Us -->
+
+            <section
+                class="md:h-[1088px] md:pb-[120px] md:pt-[263px] py-16 px-[15px] md:pl-[180px] md:pr-[76px] relative about">
+                <div class="max-w-[604px] w-full">
+                    <h2 class="font-pop font-bold text-[55px] max-md:text-2xl tracking-[0.0025em] max-md:h-[26px]">
+                        ABOUT US
+                    </h2>
+                    <p class="font-normal tracking-[0.005em] leading-[19.5px] description-about max-md:!hidden mb-6">
+                        If you are planning travel for a vacation in Vietnam
+                        with your family, your friend group, your spouse or
+                        with yourself, you might need a personalized trip
+                        planner. Connek trip shall be helpful for you.
+                        <br />
+                        When traveling, time is a resource you don’t want to
+                        waste. Our job as your trip consultant is to help
+                        you plan your dream itineraries, stay up to date the
+                        information of travel restrictions and changes after
+                        Covid-19, get the “Insider” knowledge of the
+                        destination, protect your from scams and fraud, deal
+                        with last-minute changes and emergencies, etc. We do
+                        our best to help you receive the most value for your
+                        money. You will have complete peace of mind knowing
+                        there’re someone take care for you, 24/7 during your
+                        trip, and that is invaluable. “
+                    </p>
+                    <p class="md:!hidden tracking-[0.01em] leading-7 font-normal text-sm my-4 description-about-mb">
+                        <span class="text-base font-bold leading-8">Connek Trip's mission</span>: Create connections
+                        between tourists and local
+                        cultural values. We do everything for a beautiful
+                        country Vietnam that is impressed by many
+                        international friends when it comes to us. We are
+                        proud to be Vietnamese children, we have many
+                        beauties from the image of women to famous names.
+                        The landscape creates an unforgettable highlight for
+                        Vietnam
+                    </p>
+                    <button
+                        class="max-md:px-4 shadow-btn max-md:py-[10px] max-md:mb-5 font-bold text-[#002634] tracking-[0.0125em] leading-5 bg-linearBtn px-4 py-[14px] rounded-3xl">
+                        Read more
+                    </button>
+                    <div class="relative max-md:flex max-md:justify-between">
+                        <div class="md:absolute md:top-[154px] md:left-0 max-md:w-[51px]">
+                            <h3 class="font-pop font-bold text-[38px] text-xl max-md:leading-[30px] text-center">
+                                2500
+                            </h3>
+                            <span
+                                class="font-normal max-md:text-sm max-md:leading-[17px] tracking-[0.0025em] block text-center">Happy
+                                guests</span>
+                            <div class="flex justify-center md:mt-4">
+                                <img class="object-contain md:w-16 md:h-16" src="./images/Heart.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="md:absolute md:top-0 md:right-0 max-md:w-[92px]">
+                            <h3
+                                class="font-pop font-bold text-[38px] max-md:text-xl text-center text-xl h-[22px] md:h-[42px] md:mb-1">
+                                5
+                            </h3>
+                            <img src="./images/owl.png" alt="" />
+                            <span
+                                class="font-normal max-md:text-center max-md:block max-md:text-sm max-md:leading-[17px] tracking-[0.0025em]">Tripadvisor
+                                rate</span>
+                            <div class="mt-2 md:w-16 md:h-16 md:mt-4 max-md:flex max-md:justify-center">
+                                <img class="object-cover w-8 h-8 md:w-full md:h-full" src="./images/double-star.svg"
+                                    alt="" />
+                            </div>
+                        </div>
+                        <div class="md:absolute md:top-[60px] md:right-[245px] max-md:w-[47px]">
+                            <h3
+                                class="font-pop font-bold text-[38px] max-md:text-xl max-md:text-center max-md:leading-[30px]">
+                                8125
+                            </h3>
+                            <span
+                                class="font-normal max-md:text-center max-md:block max-md:text-sm max-md:leading-[17px] tracking-[0.0025em]">Trips
+                                served</span>
+                            <div class="mt-2 md:w-16 md:h-16 md:mt-4 max-md:flex max-md:justify-center">
+                                <img class="object-cover w-8 h-8 md:w-full md:h-full" src="./images/user.svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-full h-[312px] lg:w-[740px] 3xl:w-[788px] md:h-[848px] container-mask md:absolute md:top-[120px] md:right-[76px] max-md:mt-4">
+                    <img class="w-full h-full" src="./images/union-pc.png" alt="" />
+                </div>
+            </section>
+
+            <!-- TOURS & EXPERIENCE -->
+
+            <section class="tour max-md:px-[15px] md:relative">
+                <h2 class="text-2xl font-bold uppercase font-pop tracking-[0.0025em] leading-[26px] mb-6 md:hidden">
+                    PRODUCT SUPPLY
+                </h2>
+
+                <h2 class="max-md:hidden font-pop font-bold text-[55px] mb-6 ml-[120px]">
+                    TOURS & EXPERIENCE
+                </h2>
+                <div
+                    class="max-md:hidden w-[572px] pl-[180px] h-[743px] pr-[44.5px] py-[54px] bg-[#222222] absolute top-[106.5px] left-0 z-50">
+                    <ul class="flex flex-col list-none list-location">
+                        <li
+                            class="font-normal text-sm cursor-pointer leading-[17px] tracking-[0.0025em] items-center justify-center">
+                            <p class="hidden w-1 h-1 mr-1 rounded-full bg-linearTour"></p>
+                            MOUTAINOUS NORTHERN VIETNAM
+                        </li>
+                        <li
+                            class="font-normal text-sm cursor-pointer leading-[17px] tracking-[0.0025em] items-center justify-center">
+                            <p class="hidden w-1 h-1 mr-1 rounded-full bg-linearTour"></p>
+                            MOUTAINOUS NORTHERN VIETNAM
+                        </li>
+                        <li
+                            class="font-normal text-sm cursor-pointer leading-[17px] tracking-[0.0025em] items-center justify-center">
+                            <p class="hidden w-1 h-1 mr-1 rounded-full bg-linearTour"></p>
+                            MOUTAINOUS NORTHERN VIETNAM
+                        </li>
+                    </ul>
+                    <div class="absolute flex flex-col items-center bottom-[57px] left-[54%]">
+                        <div class="h-11 w-[1px] bg-white"></div>
+                        <div class="my-4">
+                            <img class="w-[18px] h-6 object-cover" src="./images/logo-icon.svg" alt="" />
+                        </div>
+                        <div class="h-11 w-[1px] bg-white"></div>
+                        <div class="w-[96px] h-12 rounded-[80px] bg-black mt-8 mb-4"></div>
+                    </div>
+                </div>
+
+                <div class="max-md:mb-4 max-md:relative list-tour">
+                    <div class="relative w-[213px] md:w-[427px]">
+                        <h3 class="uppercase font-bold text-sm md:hidden leading-[17px] text-center mb-4">
+                            MOUTAINOUS
+                        </h3>
+                        <div class="w-full h-[266px] md:h-[690px]">
+                            <img class="object-cover w-full h-full rounded-[16px] overflow-hidden"
+                                src="./images/nha-trang.png" alt="" />
+                        </div>
+                        <h3
+                            class="max-md:hidden absolute font-pop font-bold bottom-6 left-1/2 -translate-x-1/2 item-tour-name text-xl text-center tracking-[0.0015em] leading-[30px] uppercase">
+                            HA LONG BAY
+                        </h3>
+                        <div class="absolute left-0 item-tour-description bottom-4 md:hidden md:bottom-6">
+                            <div class="flex justify-center mb-3">
+                                <img class="object-cover w-8 h-[42px] md:w-[86px] md:h-[112px]"
+                                    src="./images/logo-icon.svg" alt="" />
+                            </div>
+                            <p
+                                class="tour-description font-normal text-sm leading-[17px] text-center tracking-[0.0025em]">
+                                Amet minim mollit non deserunt ullamco est
+                                sit aliqua dolor do amet sint. Velit officia
+                                consequat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="relative w-[213px] md:w-[427px]">
+                        <h3 class="uppercase font-bold text-sm md:hidden leading-[17px] text-center mb-4">
+                            MOUTAINOUS
+                        </h3>
+                        <div class="w-full h-[266px] md:h-[690px]">
+                            <img class="object-cover w-full h-full rounded-[16px] overflow-hidden"
+                                src="./images/con-cat.png" alt="" />
+                        </div>
+                        <h3
+                            class="max-md:hidden absolute font-pop font-bold bottom-6 left-1/2 -translate-x-1/2 item-tour-name text-xl text-center tracking-[0.0015em] leading-[30px] uppercase">
+                            HA LONG BAY
+                        </h3>
+                        <div class="absolute left-0 item-tour-description bottom-4 md:hidden">
+                            <div class="flex justify-center mb-3">
+                                <img class="object-cover w-8 h-[42px] md:w-[86px] md:h-[112px]"
+                                    src="./images/logo-icon.svg" alt="" />
+                            </div>
+                            <p
+                                class="tour-description font-normal text-sm leading-[17px] text-center tracking-[0.025em]">
+                                Amet minim mollit non deserunt ullamco est
+                                sit aliqua dolor do amet sint. Velit officia
+                                consequat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="relative w-[213px] md:w-[427px]">
+                        <h3 class="uppercase font-bold text-sm md:hidden leading-[17px] text-center mb-4">
+                            MOUTAINOUS
+                        </h3>
+                        <div class="w-full h-[266px] md:h-[690px]">
+                            <img class="object-cover w-full h-full rounded-[16px] overflow-hidden"
+                                src="./images/hoa-lu.png" alt="" />
+                        </div>
+                        <h3
+                            class="max-md:hidden absolute font-pop font-bold bottom-6 left-1/2 -translate-x-1/2 item-tour-name text-xl text-center tracking-[0.0015em] leading-[30px] uppercase">
+                            HA LONG BAY
+                        </h3>
+                        <div class="absolute left-0 item-tour-description bottom-4 md:hidden">
+                            <div class="flex justify-center mb-3">
+                                <img class="object-cover w-8 h-[42px] md:w-[86px] md:h-[112px]"
+                                    src="./images/logo-icon.svg" alt="" />
+                            </div>
+                            <p
+                                class="tour-description font-normal text-sm leading-[17px] text-center tracking-[0.025em]">
+                                Amet minim mollit non deserunt ullamco est
+                                sit aliqua dolor do amet sint. Velit officia
+                                consequat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-slick-btn w-20 h-10 rounded-[80px] bg-black md:hidden"></div>
+            </section>
+
+            <!-- CONNECTING & FOLLOWING -->
+
+            <section
+                class="connect px-[15px] pt-[86px] md:pt-[138px] pb-16 md:pb-[118px] md:pl-[180px] md:!pr-0 md:relative">
+                <h2
+                    class="uppercase md:absolute md:left-[593px] font-pop font-bold md:text-[55px] md:leading-[83px] text-2xl tracking-[0.0025em] leading-6 max-md:mb-6">
+                    CONNECTING & FOLLOWING
+                </h2>
+                <div class="relative md:w-[392px] w-[calc(100% - 30px)] md:h-[548px] h-[406px]">
+                    <img class="object-contain w-full h-full" src="./images/Subtract.png" alt="" />
+                </div>
+                <p
+                    class="md:absolute md:left-[593px] md:w-[604px] md:top-[290px] tracking-[0.01em] leading-[23px] md:leading-7 font-normal text-sm max-md:mt-[60px] max-md:mb-[26px] description-about-mb">
+                    <span class="text-base font-bold leading-[26px] md:leading-8">Connek Trip's mission</span>: Create
+                    connections between tourists and local
+                    cultural values. We do everything for a beautiful
+                    country Vietnam that is impressed by many international
+                    friends when it comes to us. We are proud to be
+                    Vietnamese children, we have many beauties from the
+                    image of women to famous names. The landscape creates an
+                    unforgettable highlight for Vietnam
+                </p>
+                <div class="relative flex justify-end w-full h-full">
+                    <div class="h-[488px] max-md:hidden -mt-[179px]" data-set="vhl-pc">
+                        <img class="w-full h-full" src="./images/vinhhalong.png" alt="" />
+                    </div>
+                    <div class="h-[100px] w-[230px] md:hidden">
+                        <img class="object-contain w-full h-full" src="./images/vinhhalong-mb.png" alt="" />
+                    </div>
+                    <div class="absolute left-0 -translate-y-1/2 top-1/2 md:top-[30%]">
+                        <img class="w-[109px] h-9 md:w-[633px] md:h-[210px]" src="./images/Vietnam.svg" alt="" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- CUSTOMER’S REVIEW -->
+            <section class="customer relative px-[15px] md:px-[180px]">
+                <div class="list-review">
+                    <div class="item-review">
+                        <h2
+                            class="uppercase font-pop font-bold md:text-[50px] md:leading-[83px] text-2xl tracking-[0.0025em] leading-[26px]">
+                            CUSTOMER’S REVIEW
+                        </h2>
+                        <button
+                            class="max-md:px-4 shadow-btn md:mt-6 max-md:py-[10px] max-md:mb-6 max-md:mt-4 font-bold text-[#002634] tracking-[0.0125em] leading-5 bg-linearBtn px-4 py-[14px] rounded-3xl">
+                            Book your trip
+                        </button>
+                    </div>
+                    <div class="item-review">
+                        <img class="w-[212px] h-full max-md:w-[82px] max-md:h-[82px]" src="./images/customer.png"
+                            alt="" />
+                        <div>
+                            <h3
+                                class="text-lg 3xl:text-xl font-medium font-pop leading-[30px] max-md:mb-1 max-md:text-sm max-md:leading-5 max-md:tracking-[0.001em]">
+                                Lê Hoàng Hà (banking staff)
+                            </h3>
+                            <img src="./images/star.svg" alt="" />
+                            <p
+                                class="my-7 font-normal leading-[23.68px] max-md:my-2 max-md:text-sm max-md:leading-[17px] max-md:tracking-[0.0025em]">
+                                Amet minim mollit non deserunt ullamco est
+                                sit aliqua ullamco est sit aliqua ullamco
+                                est sit aliqua
+                            </p>
+                            <p
+                                class="italic font-light text-sm leading-[17px] max-md:absolute max-md:bottom-2 max-md:left-2">
+                                “Amet minim mollit non deserunt ests ullamco
+                                est sit aliqua”.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-review">
+                        <img class="w-[212px] h-full max-md:w-[82px] max-md:h-[82px]" src="./images/customer.png"
+                            alt="" />
+                        <div>
+                            <h3
+                                class="text-lg 3xl:text-xl font-medium font-pop leading-[30px] max-md:mb-1 max-md:text-sm max-md:leading-5 max-md:tracking-[0.001em]">
+                                Lê Hoàng Hà (banking staff)
+                            </h3>
+                            <img src="./images/star.svg" alt="" />
+                            <p
+                                class="my-7 font-normal leading-[23.68px] max-md:my-2 max-md:text-sm max-md:leading-[17px] max-md:tracking-[0.0025em]">
+                                Amet minim mollit non deserunt ullamco est
+                                sit aliqua ullamco est sit aliqua ullamco
+                                est sit aliqua
+                            </p>
+                            <p
+                                class="italic font-light text-sm leading-[17px] max-md:absolute max-md:bottom-2 max-md:left-2">
+                                “Amet minim mollit non deserunt ests ullamco
+                                est sit aliqua”.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-review">
+                        <img class="w-[212px] h-full max-md:w-[82px] max-md:h-[82px]" src="./images/customer.png"
+                            alt="" />
+                        <div>
+                            <h3
+                                class="text-lg 3xl:text-xl font-medium font-pop leading-[30px] max-md:mb-1 max-md:text-sm max-md:leading-5 max-md:tracking-[0.001em]">
+                                Lê Hoàng Hà (banking staff)
+                            </h3>
+                            <img src="./images/star.svg" alt="" />
+                            <p
+                                class="my-7 font-normal leading-[23.68px] max-md:my-2 max-md:text-sm max-md:leading-[17px] max-md:tracking-[0.0025em]">
+                                Amet minim mollit non deserunt ullamco est
+                                sit aliqua ullamco est sit aliqua ullamco
+                                est sit aliqua
+                            </p>
+                            <p
+                                class="italic font-light text-sm leading-[17px] max-md:absolute max-md:bottom-2 max-md:left-2">
+                                “Amet minim mollit non deserunt ests ullamco
+                                est sit aliqua”.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-review max-md:!hidden">
+                        <img class="w-[212px] h-full" src="./images/customer.png" alt="" />
+                        <div>
+                            <h3 class="text-lg 3xl:text-xl font-medium font-pop leading-[30px]">
+                                Lê Hoàng Hà (banking staff)
+                            </h3>
+                            <img src="./images/star.svg" alt="" />
+                            <p class="my-7 font-normal leading-[23.68px]">
+                                Amet minim mollit non deserunt ullamco est
+                                sit aliqua ullamco est sit aliqua ullamco
+                                est sit aliqua
+                            </p>
+                            <p class="italic font-light text-sm leading-[17px]">
+                                “Amet minim mollit non deserunt ests ullamco
+                                est sit aliqua”.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-review max-md:!hidden">
+                        <img class="w-[212px] h-full" src="./images/customer.png" alt="" />
+                        <div>
+                            <h3 class="text-lg 3xl:text-xl font-medium font-pop leading-[30px]">
+                                Lê Hoàng Hà (banking staff)
+                            </h3>
+                            <img src="./images/star.svg" alt="" />
+                            <p class="my-7 font-normal leading-[23.68px]">
+                                Amet minim mollit non deserunt ullamco est
+                                sit aliqua ullamco est sit aliqua ullamco
+                                est sit aliqua
+                            </p>
+                            <p class="italic font-light text-sm leading-[17px]">
+                                “Amet minim mollit non deserunt ests ullamco
+                                est sit aliqua”.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer class="mt-[46px] md:mt-[120px] w-full h-[425px] md:h-[850px] relative !overflow-hidden">
+            <img class="w-full h-full md:hidden" src="./images/footer-mb.png" alt="" />
+            <img class="w-full h-full max-md:hidden" src="./images/footer.png" alt="" />
+            <div class="absolute px-[15px] top-[61px] md:top-20 left-0 right-0 flex flex-col items-center">
+                <h1
+                    class="font-bold text-center font-pop text-[30px] md:text-[88px] md:leading-[85px] uppercase leading-[30px] md:-tracking-[0.015em] tracking-[0.0015em]">
+                    FEEL YOUR TOUR AT <br />
+                    <span
+                        class="fell-tour text-[43px] md:text-[130px] md:leading-[132px] leading-[43px] bg-linearTour">CONNEK
+                        TRIP</span>
+                </h1>
+                <img class="w-[84px] h-[71.5px] mt-3 md:mt-[23px] md:w-[204px] md:h-[173px]"
+                    src="./images/connek-footer.svg" alt="" />
+                <div
+                    class="font-normal text-sm md:text-base md:font-pop leading-[17px] md:leading-6 tracking-[0.0025em] md:tracking-[0.0015em] absolute top-[170px] md:top-[477px] left-0 right-0 px-[6px]">
+                    <div class="flex justify-center gap-x-1 md:gap-x-2">
+                        <img class="md:w-8 md:h-8" src="./images/map-pin-footer.svg" alt="" /><span
+                            class="flex items-center">98 Hang Gai, Hoan Kiem, Hanoi, Vietnam</span>
+                    </div>
+                    <div class="flex justify-center my-2 md:my-4 gap-x-1 md:gap-x-2">
+                        <img class="md:w-8 md:h-8" src="./images/mail.svg" alt="" /><span
+                            class="flex items-center">Info@connektrip.com</span>
+                    </div>
+                    <div class="flex justify-center gap-x-1 md:gap-x-2">
+                        <img class="md:w-8 md:h-8" src="./images/phone-footer.svg" alt="" /><span
+                            class="flex items-center">+84 969 678 760</span>
+                    </div>
+                    <div class="flex justify-center my-4 gap-x-4 md:mt-16">
+                        <img class="w-4 h-4 cursor-pointer md:w-12 md:h-12" src="./images/what.svg" alt="" />
+                        <img class="w-4 h-4 cursor-pointer md:w-12 md:h-12" src="./images/in.svg" alt="" />
+                        <img class="w-4 h-4 cursor-pointer md:w-12 md:h-12" src="./images/tik.svg" alt="" />
+                        <img class="w-4 h-4 cursor-pointer md:w-12 md:h-12" src="./images/fb.svg" alt="" />
+                    </div>
+                    <p
+                        class="font-normal tracking-[0.004em] md:tracking-[0.0025em] text-xs md:text-sm md:leading-[17px] leading-[15px] text-center">
+                        (c) 2022 Published by Okhub
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="absolute w-[268px] h-[268px] -left-[64px] -bottom-[71px] bg-linearBlueBlur3 md:w-[712px] md:h-[712px] md:left-[762px] md:bottom-0 md:bg-linearOrangeBlur15 blur-config md:blur-[60px]">
+            </div>
+        </footer>
+    </div>
+
+    <!-- Import script -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
 </html>

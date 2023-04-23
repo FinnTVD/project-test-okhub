@@ -2,7 +2,7 @@
     "name": "project-test-okhub",
     "version": "1.0.0",
     "description": "",
-    "main": "./public/index.js",
+    "main": "./public/index.html",
     "scripts": {
         "build": "tailwindcss -i ./src/tailwind.css -o ./public/tailwind.css --watch"
     },
