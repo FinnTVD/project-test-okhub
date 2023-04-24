@@ -88,6 +88,8 @@ body {
 
 .destination-item {
     position: relative;
+    border-radius: 16px;
+    overflow: hidden;
 }
 
 .destination-item .review {
@@ -573,5 +575,33 @@ footer .fell-tour {
 @media screen and (max-width: 339.8px) {
     .list-tour .slick-track {
         margin-left: -38px;
+    }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1535.8px) {
+    .container-destination {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .list-tour .slick-track {
+        margin-left: 92px;
+    }
+
+    .list-review .item-review h3 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+    }
+
+    .list-review .item-review p {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
     }
 }

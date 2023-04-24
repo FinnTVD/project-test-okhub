@@ -1299,14 +1299,14 @@ html {
   padding-right: 15px;
 }
 
-.px-\[180px\] {
-  padding-left: 180px;
-  padding-right: 180px;
-}
-
 .px-\[29px\] {
   padding-left: 29px;
   padding-right: 29px;
+}
+
+.px-\[60px\] {
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .px-\[6px\] {
@@ -1364,6 +1364,10 @@ html {
   padding-top: 86px;
 }
 
+.pl-\[60px\] {
+  padding-left: 60px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1385,10 +1389,6 @@ html {
   line-height: 2rem;
 }
 
-.text-\[100px\] {
-  font-size: 100px;
-}
-
 .text-\[30px\] {
   font-size: 30px;
 }
@@ -1403,6 +1403,10 @@ html {
 
 .text-\[55px\] {
   font-size: 55px;
+}
+
+.text-\[60px\] {
+  font-size: 60px;
 }
 
 .text-\[8\.5px\] {
@@ -2355,6 +2359,86 @@ html {
 @media (min-width: 1024px) {
   .lg\:w-\[740px\] {
     width: 740px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:right-\[60px\] {
+    right: 60px;
+  }
+
+  .xl\:my-5 {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .xl\:w-\[500px\] {
+    width: 500px;
+  }
+
+  .xl\:px-\[120px\] {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .xl\:pl-\[120px\] {
+    padding-left: 120px;
+  }
+
+  .xl\:pt-\[200px\] {
+    padding-top: 200px;
+  }
+
+  .xl\:\!pt-\[200px\] {
+    padding-top: 200px !important;
+  }
+
+  .xl\:pr-\[60px\] {
+    padding-right: 60px;
+  }
+
+  .xl\:\!pr-\[60px\] {
+    padding-right: 60px !important;
+  }
+
+  .xl\:text-\[80px\] {
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:right-\[76px\] {
+    right: 76px;
+  }
+
+  .\32xl\:my-7 {
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .\32xl\:w-\[604px\] {
+    width: 604px;
+  }
+
+  .\32xl\:px-\[180px\] {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+
+  .\32xl\:pl-\[180px\] {
+    padding-left: 180px;
+  }
+
+  .\32xl\:pt-\[263px\] {
+    padding-top: 263px;
+  }
+
+  .\32xl\:pr-\[76px\] {
+    padding-right: 76px;
+  }
+
+  .\32xl\:text-\[100px\] {
+    font-size: 100px;
   }
 }
 
