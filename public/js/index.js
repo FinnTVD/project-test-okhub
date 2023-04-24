@@ -72,6 +72,8 @@ $(document).ready(function () {
             });
             $("div[data-set='vhl-pc']").width("auto");
         } else {
+            $(".nav-footer").removeClass("active");
+            $(".header-nav").removeClass("active");
             $(".header-nav .menu-btn").remove();
             $(".menu-nav").remove();
             $(".nav-footer").remove();
