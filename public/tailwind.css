@@ -663,10 +663,6 @@ html {
   top: 1rem;
 }
 
-.top-\[106\.5px\] {
-  top: 106.5px;
-}
-
 .top-\[1155px\] {
   top: 1155px;
 }
@@ -739,10 +735,6 @@ html {
   top: 680px;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .z-\[9999999\] {
   z-index: 9999999;
 }
@@ -759,11 +751,6 @@ html {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-.my-7 {
-  margin-top: 1.75rem;
-  margin-bottom: 1.75rem;
 }
 
 .-mt-\[179px\] {
@@ -784,6 +771,10 @@ html {
 
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.mb-\[18px\] {
+  margin-bottom: 18px;
 }
 
 .ml-\[120px\] {
@@ -1034,10 +1025,6 @@ html {
   width: 212px;
 }
 
-.w-\[213px\] {
-  width: 213px;
-}
-
 .w-\[230px\] {
   width: 230px;
 }
@@ -1070,6 +1057,10 @@ html {
   width: 84px;
 }
 
+.w-\[9\%\] {
+  width: 9%;
+}
+
 .w-\[919px\] {
   width: 919px;
 }
@@ -1088,10 +1079,6 @@ html {
 
 .w-screen {
   width: 100vw;
-}
-
-.max-w-\[604px\] {
-  max-width: 604px;
 }
 
 .-translate-x-1\/2 {
@@ -1348,8 +1335,8 @@ html {
   padding-bottom: 4rem;
 }
 
-.pl-\[180px\] {
-  padding-left: 180px;
+.pl-\[60px\] {
+  padding-left: 60px;
 }
 
 .pr-\[44\.5px\] {
@@ -1362,10 +1349,6 @@ html {
 
 .pt-\[86px\] {
   padding-top: 86px;
-}
-
-.pl-\[60px\] {
-  padding-left: 60px;
 }
 
 .text-center {
@@ -1546,6 +1529,11 @@ html {
   letter-spacing: 0.025em;
 }
 
+.\!text-\[\#ddb152\] {
+  --tw-text-opacity: 1 !important;
+  color: rgb(221 177 82 / var(--tw-text-opacity)) !important;
+}
+
 .text-\[\#002634\] {
   --tw-text-opacity: 1;
   color: rgb(0 38 52 / var(--tw-text-opacity));
@@ -1589,10 +1577,6 @@ html {
 @media not all and (min-width: 768px) {
   .max-md\:absolute {
     position: absolute;
-  }
-
-  .max-md\:relative {
-    position: relative;
   }
 
   .max-md\:bottom-2 {
@@ -1752,6 +1736,10 @@ html {
     width: 92px;
   }
 
+  .max-md\:w-\[213px\] {
+    width: 213px;
+  }
+
   .max-md\:-translate-x-\[50\%\] {
     --tw-translate-x: -50%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1881,6 +1869,10 @@ html {
     left: 0px;
   }
 
+  .md\:left-1\/2 {
+    left: 50%;
+  }
+
   .md\:left-\[1100px\] {
     left: 1100px;
   }
@@ -1919,14 +1911,6 @@ html {
 
   .md\:right-0 {
     right: 0px;
-  }
-
-  .md\:right-\[245px\] {
-    right: 245px;
-  }
-
-  .md\:right-\[76px\] {
-    right: 76px;
   }
 
   .md\:top-0 {
@@ -2174,10 +2158,6 @@ html {
     width: 392px;
   }
 
-  .md\:w-\[427px\] {
-    width: 427px;
-  }
-
   .md\:w-\[491px\] {
     width: 491px;
   }
@@ -2216,6 +2196,11 @@ html {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:-translate-x-1\/2 {
+    --tw-translate-x: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .md\:gap-x-2 {
@@ -2264,20 +2249,12 @@ html {
     padding-left: 180px;
   }
 
-  .md\:pr-\[76px\] {
-    padding-right: 76px;
-  }
-
   .md\:pt-\[122px\] {
     padding-top: 122px;
   }
 
   .md\:pt-\[138px\] {
     padding-top: 138px;
-  }
-
-  .md\:pt-\[263px\] {
-    padding-top: 263px;
   }
 
   .md\:font-pop {
@@ -2372,8 +2349,8 @@ html {
     margin-bottom: 1.25rem;
   }
 
-  .xl\:w-\[500px\] {
-    width: 500px;
+  .xl\:w-\[40\%\] {
+    width: 40%;
   }
 
   .xl\:px-\[120px\] {
@@ -2381,24 +2358,12 @@ html {
     padding-right: 120px;
   }
 
-  .xl\:pl-\[120px\] {
-    padding-left: 120px;
-  }
-
-  .xl\:pt-\[200px\] {
-    padding-top: 200px;
-  }
-
   .xl\:\!pt-\[200px\] {
     padding-top: 200px !important;
   }
 
-  .xl\:pr-\[60px\] {
-    padding-right: 60px;
-  }
-
-  .xl\:\!pr-\[60px\] {
-    padding-right: 60px !important;
+  .xl\:pl-\[120px\] {
+    padding-left: 120px;
   }
 
   .xl\:text-\[80px\] {
@@ -2416,10 +2381,6 @@ html {
     margin-bottom: 1.75rem;
   }
 
-  .\32xl\:w-\[604px\] {
-    width: 604px;
-  }
-
   .\32xl\:px-\[180px\] {
     padding-left: 180px;
     padding-right: 180px;
@@ -2431,10 +2392,6 @@ html {
 
   .\32xl\:pt-\[263px\] {
     padding-top: 263px;
-  }
-
-  .\32xl\:pr-\[76px\] {
-    padding-right: 76px;
   }
 
   .\32xl\:text-\[100px\] {

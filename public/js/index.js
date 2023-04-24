@@ -95,10 +95,10 @@ $(document).ready(function () {
     });
 
     $(".list-tour").slick({
-        slidesToShow: 1,
+        slidesToShow: 2,
         dots: true,
-        centerMode: true,
-        variableWidth: true,
+        centerMode: false,
+        variableWidth: false,
         prevArrow:
             "<button class='slick-prev slick-tour slick-tour-active slick-tour-prev pull-left'><svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75'/></svg></button>",
         nextArrow:
@@ -112,12 +112,12 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 1,
                     dots: true,
-                    variableWidth: true,
                     infinite: true,
+                    variableWidth: true,
                     prevArrow:
                         "<button class='slick-prev slick-tour slick-tour-active slick-tour-prev pull-left'><svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75'/></svg></button>",
                     nextArrow:
-                        "<button class='slick-next slick-tour slick-tour-next pull-right'><svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' d='M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75' /></svg></button>",
+                        "<button class='slick-next slick-tour slick-tour-next pull-right'><svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6 !text-[#ddb152]'><path stroke-linecap='round' stroke-linejoin='round' d='M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75' /></svg></button>",
                 },
             },
         ],

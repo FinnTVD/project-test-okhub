@@ -81,7 +81,8 @@ body {
 
 .container-destination {
     display: grid;
-    grid-template-columns: 497px 392px 286px;
+    width: calc(100% - 64px);
+    grid-template-columns: 40% 35% 25%;
     grid-template-rows: 350px 350px;
     gap: 32px;
 }
@@ -132,13 +133,14 @@ body {
 
 .destination-item4 {
     display: grid;
+    width: calc(100% - 32px);
     grid-column-start: 1;
     grid-column-end: 2;
 
     grid-row-start: 2;
     grid-row-end: 3;
 
-    grid-template-columns: 286px 180px;
+    grid-template-columns: 60% 40%;
     grid-template-rows: 350px;
     gap: 0 32px;
 }
@@ -238,7 +240,7 @@ footer .fell-tour {
 
 @media screen and (min-width: 768px) {
     .list-tour.slick-initialized.slick-slider {
-        margin-left: 170px !important;
+        margin-left: 604px !important;
         margin-top: 51px;
     }
 
@@ -249,20 +251,20 @@ footer .fell-tour {
     .list-tour .slick-track {
         display: flex;
         gap: 0 32px;
-        margin-left: -32px;
+        margin-left: 0;
     }
 
     .list-tour .slick-prev.slick-tour {
         position: absolute;
-        bottom: 59px;
-        left: 152px;
+        bottom: 61px;
+        left: -280px;
         z-index: 100;
     }
 
     .list-tour .slick-next.slick-tour.slick-arrow {
         position: absolute;
-        bottom: 59px;
-        left: 197px;
+        bottom: 61px;
+        left: -235px;
         z-index: 100;
     }
 
@@ -270,7 +272,7 @@ footer .fell-tour {
         display: flex !important;
         position: absolute;
         bottom: 27px;
-        left: 10px;
+        left: -424px;
         background-color: black;
         width: 364px;
         z-index: 100;
@@ -358,6 +360,7 @@ footer .fell-tour {
 
     .container-destination {
         display: grid;
+        width: 100%;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 180px 196px 469px 222px;
         gap: 16px;
@@ -398,13 +401,14 @@ footer .fell-tour {
 
     .destination-item4 {
         display: grid;
+        width: calc(100% - 16px);
         grid-column-start: 1;
         grid-column-end: 3;
 
         grid-row-start: 2;
         grid-row-end: 3;
 
-        grid-template-columns: 160px 1fr;
+        grid-template-columns: 60% 40%;
         grid-template-rows: 196px;
         gap: 0 16px;
     }
@@ -446,7 +450,7 @@ footer .fell-tour {
     .list-tour .slick-track {
         display: flex;
         gap: 0 16px;
-        margin-left: -59px;
+        margin-left: 0;
     }
 
     .list-tour .slick-prev.slick-tour {
@@ -560,32 +564,8 @@ footer .fell-tour {
     }
 }
 
-@media only screen and (min-width: 340px) and (max-width: 360px) {
-    .list-tour .slick-track {
-        margin-left: -44px;
-    }
-}
 
-@media only screen and (min-width: 390px) and (max-width: 420px) {
-    .list-tour .slick-track {
-        margin-left: -73px;
-    }
-}
-
-@media screen and (max-width: 339.8px) {
-    .list-tour .slick-track {
-        margin-left: -38px;
-    }
-}
-
-@media only screen and (min-width: 1280px) and (max-width: 1535.8px) {
-    .container-destination {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .list-tour .slick-track {
-        margin-left: 92px;
-    }
+@media only screen and (min-width: 768px) and (max-width: 1535.8px) {
 
     .list-review .item-review h3 {
         display: -webkit-box;
